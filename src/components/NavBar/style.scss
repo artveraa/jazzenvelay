@@ -1,0 +1,22 @@
+.menu-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: solid 2px #fff;
+  padding: 1.8rem;
+  gap: 4rem;
+  margin: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+
+    }
+
+  }
+}
