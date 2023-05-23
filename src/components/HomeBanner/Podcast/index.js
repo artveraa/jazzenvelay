@@ -4,8 +4,8 @@ import createClient from "../../../client.js";
 const Podcast = () => {
 
     const [play, setPlay] = useState(false);
-    const lastPodcast = new Audio('https://hearthis.app/fm43/38.18.05.23.les-couleurs-du-jazz./stream.mp3?s=riD&t=1684829813')
     const [lastPodcastInfos, setLastPodcastInfos] = useState(null);
+    const lastPodcast = new Audio(lastPodcastInfos ? lastPodcastInfos.podcastLink : '')
 
     useEffect(() => {
         createClient.fetch(`*[_type == "homeBanner"]{
@@ -15,7 +15,7 @@ const Podcast = () => {
             }`).then((data) => {
             setLastPodcastInfos(data[0]);
         });
-    }, [lastPodcastInfos]);
+    }, []);
 
 
 
