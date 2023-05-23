@@ -1,12 +1,13 @@
 .home-banner {
+
   &__content {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     .last-news {
       position: relative;
       aspect-ratio: 660 / 456;
-      width: 100%;
       height: auto;
       display: flex;
       justify-content: flex-start;
@@ -28,6 +29,11 @@
 
       h2 {
         a {
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 2vw;
+
           &:before {
             content: "";
             position: absolute;
@@ -40,6 +46,12 @@
         }
 
       }
+    }
+
+    .podcast-festival {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 30%;
     }
   }
 

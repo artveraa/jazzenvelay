@@ -2,6 +2,8 @@ import {useEffect, useState} from "react";
 import './style.scss';
 import createClient from "../../client.js";
 import {Link} from "react-router-dom";
+import Festival from "./Festival";
+import Podcast from "./Podcast";
 
 const HomeBanner = () => {
 
@@ -41,6 +43,11 @@ const HomeBanner = () => {
                             }
                         </>
                     }
+                </div>
+
+                <div className={"podcast-festival"}>
+                    <Festival/>
+                    <Podcast/>
                 </div>
             </div>
 
