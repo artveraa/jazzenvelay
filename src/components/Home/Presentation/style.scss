@@ -1,0 +1,142 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: solid 2px #FFFFFF;
+  //height: 50vh;
+
+  .left-part {
+    display: grid;
+    grid-template-columns: 7vw 1fr;
+    grid-template-rows: 7vw 1fr;
+    border-left: solid 2px #FFFFFF;
+
+    border-right: solid 2px #FFFFFF;
+
+    &__icon {
+      position: relative;
+      border-bottom: solid 2px #FFFFFF;
+      border-right: solid 2px #FFFFFF;
+
+      .rotate-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        //border: solid 1px red;
+
+        .logo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: rotate 10s linear infinite;
+          z-index: -1;
+        }
+
+        .bird {
+          width: 25%;
+          height: auto;
+          object-fit: cover;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+        }
+      }
+    }
+
+    &__cta {
+      position: relative;
+      height: 100%;
+      border-right: solid 2px #fff;
+      transition: background-color 0.5s ease-in-out;
+
+      &__text {
+        position: absolute;
+        display: inline-block;
+        bottom: 2rem;
+        left: 50%;
+        transform: rotate(-90deg);
+        transform-origin: left;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fff;
+        z-index: 3;
+        transition: color 0.5s ease-in-out;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 1);
+
+        .left-part__cta__text {
+          color: #000;
+        }
+      }
+    }
+
+    &__empty {
+      border-bottom: solid 2px #fff;
+    }
+
+    &__content {
+      padding: 2vw;
+
+      .highlight {
+        font-size: 4rem;
+      }
+
+      .author {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .right-part {
+    height: 100%;
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      //border-bottom: solid 2px #fff;
+
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          position: relative;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

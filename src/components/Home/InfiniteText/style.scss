@@ -1,0 +1,60 @@
+.marquee {
+  border-left: solid 2px #FFFFFF;
+  border-bottom: solid 2px #FFFFFF;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  height: 10vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .marquee_inner {
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: 100vw;
+    //border: solid 1px red;
+
+    .marquee_text {
+      display: flex;
+
+      p {
+        white-space: nowrap;
+        font-size: 4.8vw;
+        background-color: transparent;
+        -webkit-text-stroke: 1px #FFFFFF;
+        -webkit-text-fill-color: transparent;
+
+
+      }
+    }
+
+    .marquee_img {
+      height: 6vh;
+      width: auto;
+
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@keyframes defilement {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

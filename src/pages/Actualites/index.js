@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom';
 import createClient from "../../client.js";
 import {useEffect, useState} from "react";
+import './style.scss';
 
 
 const Actualites = () => {
@@ -29,8 +30,10 @@ const Actualites = () => {
                 {allPostsData && allPostsData.map((post, index) => (
                     <article key={index}>
                         <Link to={`/actualites/${post.slug.current}`}>
+                            <div className={"inner"}>
+                                {post.image && <img src={post.image.asset.url} alt={post.titre}/>}
                             <h2>{post.titre}</h2>
-                            {post.image && <img src={post.image.asset.url} alt={post.titre} />}
+                            </div>
                         </Link>
                     </article>
                 ))}
