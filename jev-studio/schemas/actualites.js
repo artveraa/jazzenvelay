@@ -4,6 +4,17 @@ const actualites = {
     type: 'document',
     fields: [
         {
+            name: 'categories',
+            title: 'Catégories',
+            type: 'array',
+            of: [
+                {
+                    type: 'reference',
+                    to: [{type: 'categories'}],
+                }
+            ],
+        },
+        {
             name: 'titre',
             title: 'Titre',
             type: 'string',
@@ -21,6 +32,14 @@ const actualites = {
             name: 'date',
             title: 'Date',
             type: 'date',
+            options: {
+                dateFormat: 'DD-MM',
+            }
+        },
+        {
+            name: 'location',
+            title: 'Localisation',
+            type: 'string',
         },
         {
             name: 'image',

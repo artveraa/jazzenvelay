@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Franklin Gothic Demi';
+    src: url('assets/fonts/FranklinGothic-Demi.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Book';
+    src: url('assets/fonts/FranklinGothic-Book.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('assets/fonts/FranklinGothic-Heavy.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Book';
+    src: url('assets/fonts/FranklinGothic-BookItalic.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Demi Cond';
+    src: url('assets/fonts/FranklinGothic-DemiCond.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-DemiCond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Demi';
+    src: url('assets/fonts/FranklinGothic-DemiItalic.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-DemiItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('assets/fonts/FranklinGothic-HeavyItalic.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic Medium Cond';
+    src: url('assets/fonts/FranklinGothic-MediumCond.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-MediumCond.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('assets/fonts/FranklinGothic-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('assets/fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('assets/fonts/FranklinGothic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

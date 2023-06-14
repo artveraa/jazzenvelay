@@ -24,15 +24,24 @@
 
     .marquee_text {
       display: flex;
+      gap: 2vw;
 
       p {
+        font-family: "Franklin Gothic";
         white-space: nowrap;
         font-size: 4.8vw;
         background-color: transparent;
         -webkit-text-stroke: 1px #FFFFFF;
         -webkit-text-fill-color: transparent;
+        transition: all 0.5s ease-in-out;
+      }
 
+      &:hover {
+        p {
+          -webkit-text-fill-color: #FBB900;
+          -webkit-text-stroke: 1px #FBB900;
 
+        }
       }
     }
 

@@ -45,7 +45,7 @@ const HomeBanner = () => {
 
 
     return (
-        <div className="home-banner" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
+        <div className="home-banner" >
             <div className="blur-circle" ref={blurCircle}>
             </div>
             <div className={"home-banner__content"}>

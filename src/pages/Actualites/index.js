@@ -26,7 +26,7 @@ const Actualites = () => {
     return (
         <div>
             <h1>Actualites</h1>
-            <section>
+            <section className={'actualites'}>
                 {allPostsData && allPostsData.map((post, index) => (
                     <article key={index}>
                         <Link to={`/actualites/${post.slug.current}`}>

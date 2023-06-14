@@ -28,13 +28,10 @@ const InfiniteText = ({text}) => {
                     end: 'center 25%',
                     markers: true,
                     scrub: true,
-                    onEnter: () => {
-                        console.log('toto')
-                    }
                 }
             });
 
-            tl.to(marqueeInner.current, {x: "-100px", duration: 1})
+            tl.to(marqueeInner.current, {x: "-200px", duration: 1})
 
         }
     }, [hasRendered]);
