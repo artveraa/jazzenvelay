@@ -1,0 +1,71 @@
+.album-container {
+  display: grid;
+  grid-template-rows: 20vh 20vh;
+  border-left: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  position: relative;
+
+  .part-top {
+    border-bottom: 2px solid #FFF;
+  }
+
+  .content-popup {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    border: solid 2px #FFF;
+    padding: 1vw;
+    max-width: 30%;
+
+    .streaming-links {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      justify-content: space-between;
+
+      .spotify,
+      .deezer,
+      .apple-music {
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        padding: 1vw;
+
+        .icon {
+          border: solid 2px #FFF;
+          border-radius: 50%;
+          padding: 1.5vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  .album-popup {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: auto;
+
+    background-color: #000;
+    border: solid 2px #FFF;
+    display: flex;
+    padding: 1vw;
+
+    .album-pochette {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

@@ -9,9 +9,11 @@ class Layout extends React.Component {
 
         return (
             <div className="layout">
+                <div className="blur-circle"></div>
                 <BirdLogo/>
                 <NavBar/>
                 {this.props.children}
+                <div className="blur-circle"></div>
             </div>
         );
     }

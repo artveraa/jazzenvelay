@@ -4,21 +4,38 @@
   overflow: hidden;
 }
 
-//.blur-circle {
-//  position: absolute;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
-//  width: 30vw;
-//  height: 30vw;
-//  background: #FBB900;
-//  filter: blur(150px);
-//  z-index: -1;
-//  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-//  border-radius: 50%;
-//
-//  &.hidden {
-//    opacity: 0;
-//    transform: translate(-50%, -50%) scale(0);
-//  }
-//}
+.blur-circle {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  background: #FBB900;
+  filter: blur(10vw);
+  opacity: 1;
+  z-index: -100;
+  border-radius: 50%;
+  animation: spin 10s linear infinite;
+
+  &:first-of-type {
+    top: -15vw;
+    right: -15vw;
+  }
+
+  &:last-of-type {
+    bottom: -15vw;
+    left: -15vw;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+    100% {
+        transform: scale(1);
+    }
+}
