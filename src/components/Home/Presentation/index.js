@@ -32,11 +32,10 @@ const Presentation = () => {
                 </Link>
                 <div className="left-part__content">
                     <p className={"highlight"}>
-                        "loremp ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                        "Jazz en Velay est une association créée en 2011 dans le but de rassembler une équipe de passionnés afin de promouvoir la culture et l'expression du jazz sur l'agglomération du Puy et dans le département de la Haute-Loire "
                     </p>
                     <p className={"author"}>
-                        - John Doe
+                        - Jean-Christophe Vera, Président de l'association
                     </p>
                 </div>
             </div>

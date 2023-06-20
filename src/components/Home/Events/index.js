@@ -23,7 +23,8 @@ const Events = () => {
                 },
             },
             location,
-    }`).then((data) => {
+            _createdAt
+    }|order(_createdAt desc) [0...4]`).then((data) => {
             data.forEach((event) => {
                 if (event.date) {
                     const date = new Date(Date.parse(event.date));

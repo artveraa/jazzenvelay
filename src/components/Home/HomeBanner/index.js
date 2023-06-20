@@ -31,6 +31,7 @@ const HomeBanner = () => {
                     titre,
                     slug,
                     publishedAt,
+                    _createdAt,
                     contenu,
                     image{
                         asset->{
@@ -38,7 +39,7 @@ const HomeBanner = () => {
                             url
                         },
                         },
-                    }[0...1]`).then((data) => setLastPost(data[0]));
+                    }|order(_createdAt desc)[0...1]`).then((data) => setLastPost(data[0]));
 
 
     }, []);

@@ -19,8 +19,9 @@ const Actualites = () => {
                             url
                         },
                         },
+                        _createdAt,
                          
-                    }| order(publishedAt desc)`).then((data) => setAllPosts(data));
+                    }| order(_createdAt desc)`).then((data) => setAllPosts(data));
     }, []);
 
     return (

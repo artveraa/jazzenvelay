@@ -1,7 +1,7 @@
 @import 'stylesheet.css';
 
 html {
-  font-size: 62.5%;
+  font-size: clamp(14px, calc(11px + 0.35vw), 50px);
   box-sizing: border-box;
   margin: 0;
   padding: 0;

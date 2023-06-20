@@ -6,20 +6,35 @@
   position: relative;
 
   .part-top {
+    position: relative;
     border-bottom: 2px solid #FFF;
+    overflow: hidden;
+
+    h3 {
+      font-size: 12vh;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      margin: 0;
+      max-width: 80%;
+    }
   }
 
   .content-popup {
     position: absolute;
-    top: 60%;
-    left: 10%;
-    border: solid 2px #FFF;
-    padding: 1vw;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    //border: solid 2px #FFF;
+    //padding: 1vw;
     max-width: 30%;
 
     .streaming-links {
       display: grid;
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: 5vw 5vw 5vw;
+      grid-gap: 2vw;
       justify-content: space-between;
 
       .spotify,
@@ -27,18 +42,38 @@
       .apple-music {
         aspect-ratio: 1 / 1;
         cursor: pointer;
-        padding: 1vw;
 
         .icon {
+          position: relative;
           border: solid 2px #FFF;
           border-radius: 50%;
           padding: 1.5vw;
+          background-color: #000;
+          transition: background-color 0.3s ease-in-out;
 
           img {
             width: 100%;
             height: 100%;
             object-fit: contain;
           }
+        }
+      }
+
+      .spotify:hover {
+        .icon {
+          background-color: #1DB954;
+        }
+      }
+
+      .deezer:hover {
+        .icon {
+          background-color: #00C7F2;
+        }
+      }
+
+      .apple-music:hover {
+        .icon {
+          background-color: #FF2D55;
         }
       }
     }
