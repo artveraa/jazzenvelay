@@ -16,17 +16,21 @@ const Album = () => {
 
     useEffect(() => {
 
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: albumText.current,
-                    start: 'center 75%',
-                    end: 'center 25%',
-                    markers: true,
-                    scrub: true,
-                }
-            });
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: albumText.current,
+                start: 'center bottom',
+                end: 'center start',
+                markers: true,
+                scrub: true,
+            }
+        });
 
-            tl.to(albumText.current, {y: "-200px", duration: 1})
+        tl.to(albumText.current, {y: "-200px", duration: 1})
+
+        return () => {
+            tl.kill();
+        }
 
     });
 
@@ -34,7 +38,12 @@ const Album = () => {
     return (
         <div className="album-container">
             <div className="part-top">
-                <h3 ref={albumText}>L'album des 10 ans est disponible de partout !</h3>
+                <h3 ref={albumText}>
+                    <span>L'album des 10 ans</span>
+                    <span>L'album des 10 ans</span>
+                    <span>L'album des 10 ans</span>
+                    <span>L'album des 10 ans</span>
+                </h3>
             </div>
             <div className="content-popup">
                 <div className="streaming-links">

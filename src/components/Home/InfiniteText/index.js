@@ -24,14 +24,18 @@ const InfiniteText = ({text}) => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: marquee.current,
-                    start: 'center 75%',
-                    end: 'center 25%',
+                    start: 'center bottom',
+                    end: 'center start',
                     markers: true,
                     scrub: true,
                 }
             });
 
             tl.to(marqueeInner.current, {x: "-200px", duration: 1})
+
+            return () => {
+                tl.kill();
+            }
 
         }
     }, [hasRendered]);
