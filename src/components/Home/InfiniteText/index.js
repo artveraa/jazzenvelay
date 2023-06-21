@@ -6,11 +6,6 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const InfiniteText = ({text}) => {
-    const [hasRendered, setHasRendered] = useState(false)
-
-    useEffect(() => {
-        setHasRendered(true)
-    }, [hasRendered])
 
     const marquee = useRef(null);
     const marqueeInner = useRef(null);
@@ -18,7 +13,7 @@ const InfiniteText = ({text}) => {
 
     useEffect(() => {
 
-        if (hasRendered) {
+
             // gsap.set(marqueeInner.current, {x: 0})
 
             const tl = gsap.timeline({
@@ -37,8 +32,7 @@ const InfiniteText = ({text}) => {
                 tl.kill();
             }
 
-        }
-    }, [hasRendered]);
+    }, []);
 
     const translateText = () => {
         console.log('toto')

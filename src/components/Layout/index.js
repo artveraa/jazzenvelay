@@ -18,11 +18,11 @@ const Layout = (props) => {
             // DOM element to apply smooth scroll
             element: layoutRef.current,
             // scroll speed
-            speed: 0.1,
+            speed: .5,
             // scroll speed when shift key is pressed
-            fastSpeed: 0.5,
-            // scroll speed when ctrl key is pressed
-            slowSpeed: 0.01,
+            // fastSpeed: 0.5,
+            // // scroll speed when ctrl key is pressed
+            // slowSpeed: 0.01,
         });
 
         return () => {
