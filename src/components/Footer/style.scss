@@ -11,11 +11,30 @@ footer {
     justify-content: space-between;
     height: 100%;
 
-    h2 {
-      text-transform: uppercase;
-      margin: 0;
-      font-size: 9vw;
-      padding: 2vw;
+    .get-in-touch {
+      text-decoration: none;
+      color: #FFF;
+
+      h2 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 9vw;
+        padding: 2vw;
+
+        svg {
+          transform: translateX(100%);
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          svg {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+      }
     }
 
     .footer-menu {
@@ -51,6 +70,11 @@ footer {
 
     .social {
       border-right: solid 2px #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2vw;
+      color: #FFF;
     }
   }
 
