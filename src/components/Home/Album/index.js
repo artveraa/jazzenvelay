@@ -10,39 +10,42 @@ import {useEffect, useRef} from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 
-const Album = () => {
+const Album = ({textAlbum, textDispo}) => {
 
     const albumText = useRef(null);
+    const dispoText = useRef(null);
+    const albumContainer = useRef(null);
 
     useEffect(() => {
 
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: albumText.current,
+                trigger: albumContainer.current,
                 start: 'center bottom',
                 end: 'center start',
                 markers: true,
                 scrub: true,
-            }
+            },
         });
 
         tl.to(albumText.current, {y: "-200px", duration: 1})
+            .to(dispoText.current, {y: "-200px", duration: 1}, '-=1')
 
         return () => {
             tl.kill();
         }
-
     });
 
 
     return (
-        <div className="album-container">
+        <div className="album-container" ref={albumContainer}>
             <div className="part-top">
                 <h3 ref={albumText}>
-                    <span>L'album des 10 ans</span>
-                    <span>L'album des 10 ans</span>
-                    <span>L'album des 10 ans</span>
-                    <span>L'album des 10 ans</span>
+                    <span>{textAlbum}</span>
+                    <span>{textAlbum}</span>
+                    <span>{textAlbum}</span>
+                    <span>{textAlbum}</span>
+                    <span>{textAlbum}</span>
                 </h3>
             </div>
             <div className="content-popup">
@@ -70,7 +73,13 @@ const Album = () => {
                 </div>
             </div>
             <div className="part-bottom">
-
+                <h3 ref={dispoText}>
+                    <span>{textDispo}</span>
+                    <span>{textDispo}</span>
+                    <span>{textDispo}</span>
+                    <span>{textDispo}</span>
+                    <span>{textDispo}</span>
+                </h3>
             </div>
         </div>
     );

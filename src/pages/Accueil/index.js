@@ -10,8 +10,8 @@ const Accueil = () => {
             <HomeBanner />
             <InfiniteText text="Jazz en Velay"/>
             <Presentation />
+            <Album textAlbum="L'album des 10 ans" textDispo="est disponible" />
             <Events />
-            <Album />
         </div>
     );
 }
