@@ -1,0 +1,35 @@
+.equipe {
+  .member {
+    padding: 2vw;
+    border-bottom: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+    p {
+      margin: 0;
+      text-transform: uppercase;
+
+      &.member-name {
+        font-size: 1.5vw;
+      }
+
+      &.member-role {
+        font-size: 1vw;
+        border: solid 1px #FFF;
+        padding: 1vw;
+        border-radius: 1000px;
+      }
+    }
+
+    &:hover {
+      background-color: #FFF;
+      color: #000;
+
+      .member-role {
+        border-color: #000;
+      }
+    }
+  }
+}

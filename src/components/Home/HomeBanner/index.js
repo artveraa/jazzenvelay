@@ -11,21 +11,6 @@ const HomeBanner = () => {
     const [lastPost, setLastPost] = useState(null);
     const blurCircle = useRef(null);
 
-    const handleMouseMove = (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        blurCircle.current.style.left = x + 'px';
-        blurCircle.current.style.top = y + 'px';
-    }
-
-    const handleMouseLeave = () => {
-        blurCircle.current.classList.add('hidden');
-    }
-
-    const handleMouseEnter = () => {
-        blurCircle.current.classList.remove('hidden');
-    }
-
     useEffect(() => {
         createClient.fetch(`*[_type == "actualites"]{
                     titre,
@@ -41,7 +26,9 @@ const HomeBanner = () => {
                         },
                     }|order(_createdAt desc)[0...1]`).then((data) => setLastPost(data[0]));
 
+        return () => {
 
+        }
     }, []);
 
 

@@ -4,6 +4,7 @@ import NavBar from "../NavBar";
 import BirdLogo from "../BirdLogo";
 import {ScrollSmoother} from "gsap/ScrollSmoother";
 import {gsap} from "gsap";
+import Footer from "../Footer";
 
 gsap.registerPlugin(ScrollSmoother);
 
@@ -39,6 +40,7 @@ const Layout = (props) => {
                     <BirdLogo/>
                     <NavBar/>
                     {props.children}
+                    <Footer/>
                     <div className="blur-circle"></div>
                 </div>
             </div>

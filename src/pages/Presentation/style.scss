@@ -1,3 +1,15 @@
 .page-presentation {
   border-left: 2px solid #FFF;
+
+  h2 {
+    text-transform: uppercase;
+    padding: 2vw;
+    margin: 0;
+    border-bottom: solid 2px #FFF;
+
+    &:nth-of-type(even) {
+      text-align: right;
+      border-top: solid 2px #FFF;
+    }
+  }
 }
