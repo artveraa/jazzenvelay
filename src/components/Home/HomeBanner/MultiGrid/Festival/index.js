@@ -1,10 +1,11 @@
 import './style.scss'
 import {Link} from "react-router-dom";
 import rightArrow from '../../../../../assets/svg/right-arrow.svg'
+import {useEffect, useRef} from "react";
 
 const Festival = () => {
-    return (
 
+    return (
         <Link to={'/festival'} className={'festival-card'}>
             <div className="festival-card__content">
                 <div className="festival-card__content__date">
@@ -22,6 +23,7 @@ const Festival = () => {
 
             </div>
         </Link>
+
     )
 }
 

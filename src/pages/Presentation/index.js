@@ -3,6 +3,7 @@ import './style.scss';
 import Equipe from "../../components/Presentation/Equipe";
 import InfiniteText from "../../components/Home/InfiniteText";
 import Clip from "../../components/Presentation/Clip";
+import transition from "../../transition";
 
 const Presentation = () => {
 
@@ -18,4 +19,4 @@ const Presentation = () => {
     );
 }
 
-export default Presentation;
+export default transition(Presentation);

@@ -5,6 +5,8 @@
   padding: 2vw;
   text-decoration: none;
   color: #fff;
+  position: relative;
+  display: block;
 
   &__content {
     height: 100%;
@@ -65,6 +67,7 @@
     }
   }
 }
+
 
 @keyframes leftRight {
   0% {

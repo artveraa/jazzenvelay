@@ -1,3 +1,4 @@
+import transition from "../../transition";
 const Contact = () => {
     return (
         <div>
@@ -6,4 +7,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default transition(Contact);

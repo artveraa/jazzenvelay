@@ -3,6 +3,7 @@ import InfiniteText from "../../components/Home/InfiniteText";
 import Presentation from "../../components/Home/Presentation";
 import Events from "../../components/Home/Events";
 import Album from "../../components/Home/Album";
+import transition from "../../transition";
 
 const Accueil = () => {
     return (
@@ -16,4 +17,4 @@ const Accueil = () => {
     );
 }
 
-export default Accueil;
+export default transition(Accueil);

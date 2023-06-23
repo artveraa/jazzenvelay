@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import createClient from "../../client.js";
 import {useEffect, useState} from "react";
 import './style.scss';
+import transition from "../../transition";
 
 
 const Actualites = () => {
@@ -43,4 +44,4 @@ const Actualites = () => {
     )
 }
 
-export default Actualites;
+export default transition(Actualites);

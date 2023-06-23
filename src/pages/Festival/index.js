@@ -1,3 +1,5 @@
+import transition from "../../transition";
+
 const Festival = () => {
     return (
         <div>
@@ -6,4 +8,4 @@ const Festival = () => {
     )
 }
 
-export default Festival;
+export default transition(Festival);

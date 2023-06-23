@@ -1,3 +1,4 @@
+import transition from "../../transition";
 const Medias = () => {
     return (
         <div>
@@ -6,4 +7,4 @@ const Medias = () => {
     );
 }
 
-export default Medias;
+export default transition(Medias);

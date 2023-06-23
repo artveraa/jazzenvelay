@@ -1,0 +1,39 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #FBB900;
+  z-index: 999;
+
+  .img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3vw;
+    height: auto;
+    border-radius: 50%;
+    animation: fly 1s infinite;
+    z-index: 9999;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(-50%, 50px);
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, 50px);
+    }
+}
