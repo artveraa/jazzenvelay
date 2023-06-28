@@ -1,10 +1,25 @@
 
 import "./style.scss"
+import {useState} from "react";
 
 const NavBar = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+        console.log(menuOpen);
+    }
+
     return (
-        <div>
-            <ul className={"menu-items"}>
+        <div className={"navbar"}>
+            <div className={menuOpen ? "mobile-menu close" : "mobile-menu"} onClick={toggleMenu}>
+                <div className={"line"}/>
+                <div className={"line"}/>
+                <div className={"line"}/>
+            </div>
+
+            <ul className={menuOpen ? "menu-items open" : "menu-items"} >
                 <li>
                     <a href={"/"}>Accueil</a>
                 </li>

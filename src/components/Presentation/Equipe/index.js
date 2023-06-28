@@ -6,8 +6,6 @@ const Equipe = () => {
 
     const [equipe, setEquipe] = useState(null);
 
-    console.log(equipe)
-
     useEffect(() => {
         createClient.fetch(`*[_type == "equipe"]{
             member,
