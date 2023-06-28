@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
     .last-news {
       position: relative;
       aspect-ratio: 660 / 456;
@@ -16,6 +20,10 @@
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff;
       border-right: 2px solid #fff;
+
+      @media (max-width: 768px) {
+        aspect-ratio: 660 / 200;
+      }
 
       img {
         width: 100%;
@@ -52,6 +60,13 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 30%;
+
+      @media (max-width: 768px) {
+        border-left: 2px solid #fff;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        border-bottom: 2px solid #fff;
+      }
     }
   }
 

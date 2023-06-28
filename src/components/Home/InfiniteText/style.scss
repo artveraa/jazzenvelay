@@ -3,7 +3,7 @@
   border-bottom: solid 2px #FFFFFF;
   text-transform: uppercase;
   padding: 2rem 0;
-  height: 10vh;
+  height: 10vw;
   position: relative;
   width: 100%;
   display: flex;
@@ -46,16 +46,16 @@
       //}
     }
 
-    .marquee_img {
-      height: 6vh;
-      width: auto;
-
-      img {
-        height: 100%;
-        width: auto;
-        object-fit: cover;
-      }
-    }
+    //.marquee_img {
+    //  height: 6vh;
+    //  width: auto;
+    //
+    //  img {
+    //    height: 100%;
+    //    width: auto;
+    //    object-fit: cover;
+    //  }
+    //}
   }
 }
 

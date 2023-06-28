@@ -6,6 +6,10 @@
     grid-template-rows: 1fr 1fr;
     transition: background .3s ease;
 
+    @media (max-width: 768px) {
+        display: none;
+    }
+
     .social-link {
         display: flex;
         justify-content: center;

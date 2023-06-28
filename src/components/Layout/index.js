@@ -21,9 +21,9 @@ const Layout = (props) => {
             // scroll speed
             speed: .5,
             // scroll speed when shift key is pressed
-            // fastSpeed: 0.5,
+            fastSpeed: 0.5,
             // // scroll speed when ctrl key is pressed
-            // slowSpeed: 0.01,
+            slowSpeed: 0.01,
         });
 
         return () => {
